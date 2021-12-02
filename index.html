@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+
+    <title>To do List</title>
+</head>
+<body>
+    <div class="container">
+    <h1>To Do List</h1>
+        <div class="novaTarefa">
+            <input type="text" placeholder="Adicione uma tarefa" class="campoTarefa" id="campoTarefa">
+            <button id="btnAddTarefa" class="btnAdd">Adicionar</button>
+        </div>
+
+        <div class="tarefas">
+            <!-- <div data-index="0" class="conteudo-tarefa" id="conteudo-tarefa">
+                <input type="checkbox" id="scales" name="scales"
+                checked>
+                <label for="scales" class="texto-tarefa">Scales</label>
+                <i class="far fa-times-circle icon"></i>
+            </div> -->
+        </div>
+
+        <button type="button" id="btnRemoverTarefas" class="btnRemover" disabled>Remover Tarefas</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

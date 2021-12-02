@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: rgb(221, 217, 217);
+}
+
+
+.container{
+    max-width: 500px;
+    margin: 60px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+}
+
+.container h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.novaTarefa{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.novaTarefa .campoTarefa{
+    background-color: rgb(221, 217, 217);
+    width: 300px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.novaTarefa .btnAdd{
+    background-color: rgba(117, 65, 201, 0.815);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width: 500px){
+    .novaTarefa{
+        padding: 10px;
+    }
+
+    .novaTarefa .campoTarefa{
+        width: 250px;
+    }
+
+    .novaTarefa .btnAdd{
+        padding: 5px 10px;
+    }
+
+    .novaTarefa .btnAdd{
+        padding: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 350px){
+    .novaTarefa{
+        flex-direction: column;
+
+    }
+    .novaTarefa .campoTarefa{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .novaTarefa .btnAdd{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.btnRemover{
+    background-color: rgba(240, 18, 18, 0.815);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+button[type="button"]:disabled {
+    cursor: not-allowed;
+    background-color: rgba(240, 18, 18, 0.185);
+}
+
+.tarefas{
+    background-color: rgb(255, 255, 255);
+    max-height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.tarefas .conteudo-tarefa{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+input[type="checkbox"]:checked .tarefas .conteudo-tarefa{
+    background-color: rgb(206, 19, 35);
+}
+
+.tarefas .conteudo-tarefa .texto-tarefa{
+    margin-left: 20px;
+    user-select: none;
+    word-break: break-all;
+}
+
+.tarefas .conteudo-tarefa:not(:last-child){
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.novaTarefa .campoTarefa,
+.tarefas .conteudo-tarefa .texto-tarefa, 
+.tarefas .conteudo-tarefa .icon{
+    font-size: 1.25rem;
+}
+
+.tarefas .conteudo-tarefa .icon{
+    font-size: 2rem;
+    color: rgb(197, 90, 90);
+    cursor: pointer;
+    margin-left: auto;
+}
